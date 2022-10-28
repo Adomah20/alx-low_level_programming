@@ -42,4 +42,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[c] = r[d];
 		r[d] = e;
 	}
+	return (r);
 }
