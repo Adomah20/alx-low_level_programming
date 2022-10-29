@@ -17,13 +17,13 @@ void print_buffer(char *b, int size)
 	{
 		for (a = 0; a < size; a += 10)
 		{
-			printf("%.8x:", a);
+			printf("%.8x", a);
 			for (d = a; d < a + 10; d++)
 			{
 				if (d % 2 == 0)
 					printf(" ");
 				if (d < size)
-					printf("%.2x:", *(b + d));
+					printf("%.2x", *(b + d));
 				else
 					printf(" ");
 			}
