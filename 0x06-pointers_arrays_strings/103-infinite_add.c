@@ -30,7 +30,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
 			break;
 		}
-		f = e / 10;
+		e = f / 10;
 		r[c] = f % 10 + '0';
 	}
 	r[c] = '\0';
