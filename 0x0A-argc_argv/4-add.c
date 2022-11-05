@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	for (a = 1; argv[a]; a++)
 	{
 		b = strtol(argv[a], &flag, 10);
-		if (&flag)
+		if (*flag)
 		{
 			printf("Error\n");
 			return (1);
